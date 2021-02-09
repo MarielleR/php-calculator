@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A PHP Calculator!</title>
+</head>
+<body>
+    <h1>A Simple PHP Calculator</h1>
+    <form action="functions.php" method="GET">
+        <!-- Using GET instead of POST, because we're not dealing with sensitive data -->
+        <input type="text" name="num01" placeholder="Number 1">
+        <select name="operation">
+            <label>Choose operation!</label>
+            <option value="add">Add</option>
+            <option value="sub">Subtract</option>
+        </select>
+        <input type="text" name="num02" placeholder="Number 2">
+        <button type="submit">Calculate!</button>
+    </form>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: teal;
+        }
+    </style>
+</body>
+</html>
